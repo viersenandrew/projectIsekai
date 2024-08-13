@@ -1,0 +1,119 @@
+[gd_scene format=3 uid="uid://ba7du3etderyu"]
+
+[node name="AudioMenu" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HSlider" type="HSlider" parent="CanvasLayer"]
+offset_left = 349.0
+offset_top = 213.0
+offset_right = 550.0
+offset_bottom = 229.0
+max_value = 1.0
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.0663176
+anchor_top = 0.00813008
+anchor_right = 0.114311
+anchor_bottom = 0.195122
+offset_left = 176.602
+offset_top = 203.732
+offset_right = 185.314
+offset_bottom = 107.561
+text = "Master"
+
+[node name="HSlider2" type="HSlider" parent="CanvasLayer"]
+offset_left = 349.0
+offset_top = 294.0
+offset_right = 550.0
+offset_bottom = 310.0
+max_value = 1.0
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.0663176
+anchor_top = 0.00813008
+anchor_right = 0.114311
+anchor_bottom = 0.195122
+offset_left = 176.602
+offset_top = 284.732
+offset_right = 179.314
+offset_bottom = 193.561
+text = "Master"
+
+[node name="HSlider3" type="HSlider" parent="CanvasLayer"]
+offset_left = 349.0
+offset_top = 375.0
+offset_right = 550.0
+offset_bottom = 391.0
+max_value = 1.0
+
+[node name="Label3" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.0663176
+anchor_top = 0.00813008
+anchor_right = 0.114311
+anchor_bottom = 0.195122
+offset_left = 176.602
+offset_top = 365.732
+offset_right = 178.314
+offset_bottom = 268.561
+text = "Master"
+
+[node name="HSlider4" type="HSlider" parent="CanvasLayer"]
+offset_left = 717.0
+offset_top = 213.0
+offset_right = 918.0
+offset_bottom = 229.0
+max_value = 1.0
+
+[node name="Label4" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.0663176
+anchor_top = 0.00813008
+anchor_right = 0.114311
+anchor_bottom = 0.195122
+offset_left = 544.602
+offset_top = 203.732
+offset_right = 549.314
+offset_bottom = 112.561
+text = "Master"
+
+[node name="HSlider5" type="HSlider" parent="CanvasLayer"]
+offset_left = 717.0
+offset_top = 294.0
+offset_right = 918.0
+offset_bottom = 310.0
+max_value = 1.0
+
+[node name="Label5" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.0663176
+anchor_top = 0.00813008
+anchor_right = 0.114311
+anchor_bottom = 0.195122
+offset_left = 544.602
+offset_top = 284.732
+offset_right = 547.314
+offset_bottom = 193.561
+text = "Master"
+
+[node name="HSlider6" type="HSlider" parent="CanvasLayer"]
+offset_left = 717.0
+offset_top = 375.0
+offset_right = 918.0
+offset_bottom = 391.0
+max_value = 1.0
+
+[node name="Label6" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.0663176
+anchor_top = 0.00813008
+anchor_right = 0.114311
+anchor_bottom = 0.195122
+offset_left = 544.602
+offset_top = 365.732
+offset_right = 546.314
+offset_bottom = 268.561
+text = "Master"

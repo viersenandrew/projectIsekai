@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4pgl6g6gygub"]
+
+[ext_resource type="Script" path="res://Prefabs/Menus/Scripts/MainMenu.cs" id="1_ieyfb"]
+
+[node name="MainMenu" type="Node2D" node_paths=PackedStringArray("canvasLayers")]
+script = ExtResource("1_ieyfb")
+canvasLayers = []

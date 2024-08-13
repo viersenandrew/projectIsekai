@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmrohap8b3i3y"]
+
+[ext_resource type="PackedScene" uid="uid://csjvp86mkktng" path="res://Prefabs/Menus/SaveLoadDeleteMenu.tscn" id="1_gwytn"]
+
+[node name="30Main" type="Node2D"]
+
+[node name="CanvasLayer" parent="." instance=ExtResource("1_gwytn")]

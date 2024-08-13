@@ -1,8 +1,11 @@
-[gd_scene format=3 uid="uid://damb4mve8athi"]
+[gd_scene load_steps=2 format=3 uid="uid://damb4mve8athi"]
+
+[ext_resource type="Script" path="res://scripts/SaveLoadDeleteMenu.cs" id="1_h87x7"]
 
 [node name="20SettingsScene" type="Node2D"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_h87x7")
 
 [node name="Control" type="Control" parent="CanvasLayer"]
 layout_mode = 3
