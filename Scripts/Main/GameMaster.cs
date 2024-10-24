@@ -7,7 +7,7 @@ public partial class GameMaster : Node {
     public static GameMaster instance;
 
     //Release.Features.Patch
-    public static string gameVersion = "0.1.1 Build Date: 9/24/2023";
+    public static string gameVersion = "0.1.1 Build Date: 8/15/2024";
 
     //The slot number that the game will save and load to by default
     public static int currentSlotNum = 0;

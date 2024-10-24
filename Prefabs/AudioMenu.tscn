@@ -1,119 +1,134 @@
-[gd_scene format=3 uid="uid://ba7du3etderyu"]
+[gd_scene load_steps=2 format=3 uid="uid://ba7du3etderyu"]
+
+[ext_resource type="Script" path="res://Prefabs/Menus/Scripts/AudioMenu.cs" id="1_3yhnu"]
 
 [node name="AudioMenu" type="Node2D"]
+position = Vector2(595, 297)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_3yhnu")
 
-[node name="HSlider" type="HSlider" parent="CanvasLayer"]
-offset_left = 349.0
-offset_top = 213.0
-offset_right = 550.0
-offset_bottom = 229.0
-max_value = 1.0
-
-[node name="Label" type="Label" parent="CanvasLayer"]
+[node name="master_hslider" type="HSlider" parent="CanvasLayer"]
 anchors_preset = -1
-anchor_left = 0.0663176
-anchor_top = 0.00813008
-anchor_right = 0.114311
-anchor_bottom = 0.195122
-offset_left = 176.602
-offset_top = 203.732
-offset_right = 185.314
-offset_bottom = 107.561
-text = "Master"
-
-[node name="HSlider2" type="HSlider" parent="CanvasLayer"]
-offset_left = 349.0
-offset_top = 294.0
-offset_right = 550.0
-offset_bottom = 310.0
+anchor_left = 0.302951
+anchor_top = 0.328704
+anchor_right = 0.477431
+anchor_bottom = 0.353395
+offset_bottom = -1.52588e-05
 max_value = 1.0
+step = 0.1
+metadata/_edit_use_anchors_ = true
 
-[node name="Label2" type="Label" parent="CanvasLayer"]
+[node name="master_label" type="Label" parent="CanvasLayer"]
 anchors_preset = -1
-anchor_left = 0.0663176
-anchor_top = 0.00813008
-anchor_right = 0.114311
-anchor_bottom = 0.195122
-offset_left = 176.602
-offset_top = 284.732
-offset_right = 179.314
-offset_bottom = 193.561
+anchor_left = 0.219618
+anchor_top = 0.322531
+anchor_right = 0.275174
+anchor_bottom = 0.361111
 text = "Master"
+metadata/_edit_use_anchors_ = true
 
-[node name="HSlider3" type="HSlider" parent="CanvasLayer"]
-offset_left = 349.0
-offset_top = 375.0
-offset_right = 550.0
-offset_bottom = 391.0
+[node name="music_hslider" type="HSlider" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.302951
+anchor_top = 0.453704
+anchor_right = 0.477431
+anchor_bottom = 0.478395
 max_value = 1.0
+step = 0.1
+metadata/_edit_use_anchors_ = true
 
-[node name="Label3" type="Label" parent="CanvasLayer"]
+[node name="music_label" type="Label" parent="CanvasLayer"]
 anchors_preset = -1
-anchor_left = 0.0663176
-anchor_top = 0.00813008
-anchor_right = 0.114311
-anchor_bottom = 0.195122
-offset_left = 176.602
-offset_top = 365.732
-offset_right = 178.314
-offset_bottom = 268.561
-text = "Master"
+anchor_left = 0.219618
+anchor_top = 0.447531
+anchor_right = 0.269966
+anchor_bottom = 0.493827
+offset_right = -3.05176e-05
+text = "Music"
+metadata/_edit_use_anchors_ = true
 
-[node name="HSlider4" type="HSlider" parent="CanvasLayer"]
-offset_left = 717.0
-offset_top = 213.0
-offset_right = 918.0
-offset_bottom = 229.0
+[node name="sfx_hslider" type="HSlider" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.302951
+anchor_top = 0.578704
+anchor_right = 0.477431
+anchor_bottom = 0.603395
 max_value = 1.0
+step = 0.1
+metadata/_edit_use_anchors_ = true
 
-[node name="Label4" type="Label" parent="CanvasLayer"]
+[node name="sfx_label" type="Label" parent="CanvasLayer"]
 anchors_preset = -1
-anchor_left = 0.0663176
-anchor_top = 0.00813008
-anchor_right = 0.114311
-anchor_bottom = 0.195122
-offset_left = 544.602
-offset_top = 203.732
-offset_right = 549.314
-offset_bottom = 112.561
-text = "Master"
+anchor_left = 0.225694
+anchor_top = 0.570988
+anchor_right = 0.275174
+anchor_bottom = 0.608025
+text = "SFX"
+metadata/_edit_use_anchors_ = true
 
-[node name="HSlider5" type="HSlider" parent="CanvasLayer"]
-offset_left = 717.0
-offset_top = 294.0
-offset_right = 918.0
-offset_bottom = 310.0
+[node name="voice_hslider" type="HSlider" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.622396
+anchor_top = 0.328704
+anchor_right = 0.796875
+anchor_bottom = 0.353395
+offset_bottom = -1.52588e-05
 max_value = 1.0
+step = 0.1
+metadata/_edit_use_anchors_ = true
 
-[node name="Label5" type="Label" parent="CanvasLayer"]
+[node name="voice_label" type="Label" parent="CanvasLayer"]
 anchors_preset = -1
-anchor_left = 0.0663176
-anchor_top = 0.00813008
-anchor_right = 0.114311
-anchor_bottom = 0.195122
-offset_left = 544.602
-offset_top = 284.732
-offset_right = 547.314
-offset_bottom = 193.561
-text = "Master"
+anchor_left = 0.539062
+anchor_top = 0.322531
+anchor_right = 0.591146
+anchor_bottom = 0.368827
+text = "Voice"
+metadata/_edit_use_anchors_ = true
 
-[node name="HSlider6" type="HSlider" parent="CanvasLayer"]
-offset_left = 717.0
-offset_top = 375.0
-offset_right = 918.0
-offset_bottom = 391.0
+[node name="male_hslider" type="HSlider" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.622396
+anchor_top = 0.453704
+anchor_right = 0.796875
+anchor_bottom = 0.478395
 max_value = 1.0
+step = 0.1
+metadata/_edit_use_anchors_ = true
 
-[node name="Label6" type="Label" parent="CanvasLayer"]
+[node name="male_label" type="Label" parent="CanvasLayer"]
 anchors_preset = -1
-anchor_left = 0.0663176
-anchor_top = 0.00813008
-anchor_right = 0.114311
-anchor_bottom = 0.195122
-offset_left = 544.602
-offset_top = 365.732
-offset_right = 546.314
-offset_bottom = 268.561
-text = "Master"
+anchor_left = 0.539062
+anchor_top = 0.447531
+anchor_right = 0.58941
+anchor_bottom = 0.493827
+text = "Male"
+metadata/_edit_use_anchors_ = true
+
+[node name="female_hslider" type="HSlider" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.622396
+anchor_top = 0.578704
+anchor_right = 0.796875
+anchor_bottom = 0.603395
+max_value = 1.0
+step = 0.1
+metadata/_edit_use_anchors_ = true
+
+[node name="female_label" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.539062
+anchor_top = 0.572531
+anchor_right = 0.588542
+anchor_bottom = 0.609568
+text = "Female
+"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="changed" from="CanvasLayer/master_hslider" to="CanvasLayer" method="_on_slider_value_changed" binds= ["Master"]]
+[connection signal="changed" from="CanvasLayer/music_hslider" to="CanvasLayer" method="_on_slider_value_changed" binds= ["Music"]]
+[connection signal="changed" from="CanvasLayer/sfx_hslider" to="CanvasLayer" method="_on_slider_value_changed" binds= ["SFX"]]
+[connection signal="changed" from="CanvasLayer/voice_hslider" to="CanvasLayer" method="_on_slider_value_changed" binds= ["Voice"]]
+[connection signal="changed" from="CanvasLayer/male_hslider" to="CanvasLayer" method="_on_slider_value_changed" binds= ["Male"]]
+[connection signal="changed" from="CanvasLayer/female_hslider" to="CanvasLayer" method="_on_slider_value_changed" binds= ["Female"]]

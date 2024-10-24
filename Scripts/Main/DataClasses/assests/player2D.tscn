@@ -1,6 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://cuu52peo1mend"]
+[gd_scene load_steps=13 format=3 uid="uid://cuu52peo1mend"]
 
 [ext_resource type="Texture2D" uid="uid://cjpj26q07wqmb" path="res://Scripts/Main/DataClasses/assests/PlayerSprites/IMG_0001.PNG" id="1_aek35"]
+[ext_resource type="Script" path="res://Scripts/Main/DataClasses/assests/PlayerLogic.cs" id="1_q8dch"]
 [ext_resource type="Texture2D" uid="uid://d4hvu83xgil2w" path="res://Scripts/Main/DataClasses/assests/PlayerSprites/IMG_0007.PNG" id="2_womct"]
 [ext_resource type="Texture2D" uid="uid://baxl2m2ejfdxt" path="res://Scripts/Main/DataClasses/assests/PlayerSprites/IMG_0008.PNG" id="3_hxwve"]
 [ext_resource type="Texture2D" uid="uid://b1sn6p8663ci1" path="res://Scripts/Main/DataClasses/assests/PlayerSprites/IMG_0009.PNG" id="4_csguu"]
@@ -62,11 +63,13 @@ animations = [{
 radius = 5.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_q8dch")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_xsoqy")
-animation = &"Idle"
+animation = &"WalkForward"
+frame_progress = 0.128865
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -78,6 +81,7 @@ debug_color = Color(0, 0.429404, 0.503358, 0.42)
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(8, 18)
 zoom = Vector2(2, 2)
+process_callback = 0
 position_smoothing_enabled = true
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
