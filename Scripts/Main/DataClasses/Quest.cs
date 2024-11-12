@@ -19,6 +19,32 @@ public class Quest: Node
         QuestId = questId;
         QuestName = questName;
         QuestDescription = questDescription;
-        
+        CurrentStage = 0;
+        QuestActive = false;
+        Stages = new Dictionary<string, Dictionary<string, object>>();
+    }
+
+    // Add a stage
+
+    public void AddStage(string stageID, string stageDescription)
+    {
+
+        Stages[stageID] = new Dictionary<string, object>
+        {
+            { "description", stageDescription },
+            { "completed",  false }
+        };
+    }
+
+    // Method to mark a stage as completed
+    public bool CompleteStage(string stageId)
+    {
+        if (Stages.ContainsKey(stageId))
+        {
+            Stages[stageId]["completed"] = true;
+            CurrentStage++;
+            return true;
+        }
+        return false;
     }
 }
