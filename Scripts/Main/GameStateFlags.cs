@@ -4,11 +4,11 @@ using System.Collections.Generic;
 public class GameStateFlags: Node
 {
     // Instantiate Dictionaries for Game State Flags
-    private Dictionary<string, bool> worldFlags = new Dictionary<string, bool>();
-    private Dictionary<string, bool> levelProgressionFlags = new Dictionary<string, bool>();
-    private Dictionary<string, bool> cityTitanFlags = new Dictionary<string, bool>();
-    private Dictionary<string, bool> cityNileFlags = new Dictionary<string, bool>();
-    private Dictionary<string, bool> cityCaesarFlags = new Dictionary<string, bool>();
+    private Dictionary<string, bool> worldFlags; // Just declare the variable but do not assign a value by removing the right side of the logic
+    private Dictionary<string, bool> levelProgressionFlags;
+    private Dictionary<string, bool> cityTitanFlags; 
+    private Dictionary<string, bool> cityNileFlags; 
+    private Dictionary<string, bool> cityCaesarFlags; 
 
 
     // Declare Path to JSON
@@ -34,15 +34,23 @@ public class GameStateFlags: Node
     // Function to load flags from JSON file
     private Dictionary<string, bool> LoadFlagsFromJson(string filePath)
     {
+        // Declare a variable named flags and assign it the value of a new dictionary 
         var flags = new Dictionary<string, bool>();
 
+        // check if the filePath doesn't exist using File's Exists() method
         if (!File.Exists(filePath))
         {
+            // if it doesn't exist print file not found
             GD.PrintErr($"File not found: {filePath}");
+            // then return to the flags variable
             return flags;
         }
+
+        // declare a variable called file and assign it to a new instantiation of a file object
         var file = new File();
+        // access the members of the File object and use the Open() method to open a file named filePath
         file.Open(filePath, file.ModeFlags.Read);
+        
         var jsonContent = file.GetAsText();
         file.Close();
 
